@@ -1,0 +1,119 @@
+{
+  "package_created_at_utc": "2026-09-30T21:55:40.375008+00:00",
+  "election_label": "Государственная дума 2026 (название из материалов сбора)",
+  "status": "collected_snapshot_not_certified_final",
+  "counts": {
+    "precincts": 91381,
+    "address_enrichment": 5427,
+    "protocols": 178125,
+    "line_labels": 1567,
+    "protocol_lines": 3661494,
+    "party_results": 892290,
+    "candidate_results": 631704,
+    "missing_protocols": 4831,
+    "validation_issues": 0,
+    "parties": 10,
+    "districts": 218,
+    "source_ledger": 2,
+    "collection_issues": 4831,
+    "map_geodata": 85999
+  },
+  "protocols_by_dataset": {
+    "uik": 177931,
+    "deg": 194
+  },
+  "protocol_statuses": {
+    "preliminary": 177727,
+    "recounted": 398
+  },
+  "address_coverage": {
+    "address_lookup_attempted": 5427,
+    "nonempty_address": 86001,
+    "usable_official_address": 2629,
+    "coordinates": 85999,
+    "inherited_map_coordinates": 83372,
+    "locality": 85995
+  },
+  "coordinate_confidence": {
+    "medium": 1695,
+    "high": 692,
+    "low": 240
+  },
+  "raw_included": false,
+  "source_inputs": [
+    {
+      "path_in_local_collection": "duma-2026/2026-09-30T-merged-delivery-v2/manifest.json",
+      "sha256": "c89181f8b5d4c05901d3d3b3cfb423231873c4f3cf2e3dbe3e2493970d5cc4f3",
+      "bytes": 791
+    },
+    {
+      "path_in_local_collection": "duma-2026/2026-09-30T-merged-delivery-v2/precincts.csv",
+      "sha256": "4e4381a18de6d26a96f1d8199dd2d38a290306eb7de2059bd613e42cb329fabe",
+      "bytes": 25725653
+    },
+    {
+      "path_in_local_collection": "duma-2026/2026-09-30T-merged-delivery-v2/party_results.csv",
+      "sha256": "a5200d0245376797fae6a83a961936ea5a75bc0f31c3b8d1c964c6237e6977aa",
+      "bytes": 297224001
+    },
+    {
+      "path_in_local_collection": "duma-2026/2026-09-30T-merged-delivery-v2/candidate_results.csv",
+      "sha256": "ec10c0439244700f69131c79e5aebefd0dd629a62454c6d57fd2f5dde3ab490e",
+      "bytes": 178271515
+    },
+    {
+      "path_in_local_collection": "duma-2026/2026-09-30T-merged-delivery-v2/precinct_totals.csv",
+      "sha256": "08690c8dbe7433b3360eb55ec02a1fa21413cc434c6eca564d3723ece6b6717f",
+      "bytes": 52526380
+    },
+    {
+      "path_in_local_collection": "duma-2026-deg/manifest.json",
+      "sha256": "c717eb0df0b9ebe0fe571f3fc4fae717849dcc064c14bcc5f720e0a062928b88",
+      "bytes": 490
+    },
+    {
+      "path_in_local_collection": "duma-2026-deg/deg_protocols.csv",
+      "sha256": "d01a17c3f6b9d42bf531355a7c951a65019a156c15ec288dafb41d0068eda76e",
+      "bytes": 74252
+    },
+    {
+      "path_in_local_collection": "cik-uik-addresses-2026/geocoding-relaxed/combined.csv",
+      "sha256": "62a4774c84d665848a889168c6297e39c58df5ac80c05d4cd5a05e2ff2e317d0",
+      "bytes": 3483598
+    }
+  ],
+  "source_note": "Офлайн консолидация сохранённых материалов. Название и год унаследованы от сбора; новая проверка карточки выборов не проводилась. API electionsId для дерева и UUID в протоколах различаются по типу идентификатора.",
+  "protocol_input_aggregate_hashes": [
+    {
+      "input_directory": "duma-2026/2026-09-30T-merged-delivery-v2/raw",
+      "files": 177931,
+      "aggregate_sha256": "18e71db89bd848fb60511d8f4916d5eda3c9733bb72713e149b6444c2653f169",
+      "algorithm": "SHA256 of sorted UTF-8 filename + NUL + per-file SHA256 hex + LF"
+    },
+    {
+      "input_directory": "duma-2026-deg/raw",
+      "files": 194,
+      "aggregate_sha256": "019b60e0092adf49692d4b9cc383250c1955dd4a16ab75109436063ad5338d72",
+      "algorithm": "SHA256 of sorted UTF-8 filename + NUL + per-file SHA256 hex + LF"
+    }
+  ],
+  "snapshot_date": "2026-09-30",
+  "geography_enrichment": {
+    "snapshot_date": "2026-09-30",
+    "source_delivery_sha256": "0cfc9ae8bf7a23ac67384ac8cb0766529644d70ee2ad93592b31036d3e935edc",
+    "historical_map_coordinate_additions": 83372,
+    "total_precincts_with_coordinates": 85999,
+    "precincts_without_coordinates": 5382,
+    "precincts_with_address": 86001,
+    "precincts_with_locality": 85995,
+    "coordinate_sources": {
+      "supplied_yandex_geocoding": 2627,
+      "historical_map": 83372
+    },
+    "new_geocoding_performed": false,
+    "matching_key": "region + UIK number, unique on both sides",
+    "vote_tables_unchanged": true
+  },
+  "packaging_note": "Complete supplied delivery; all vote/protocol CSV files unchanged; geography appended to precincts and SQLite.",
+  "archive_compression": "ZIP LZMA; use 7-Zip or Python zipfile"
+}
