@@ -1,0 +1,55 @@
+{
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": 0,
+  "row_counts_match_csv_sqlite": true,
+  "unique_precinct_ids": 91381,
+  "unique_protocol_keys": 178125,
+  "enrichment_rows_joined_exactly_once": 5427,
+  "all_saved_protocol_records_exported": 3661494,
+  "vote_sum_mismatch_count": 0,
+  "corrected_box_field_value_counts": {
+    "portable_box_ballots": 177448,
+    "stationary_box_ballots": 177448
+  },
+  "legacy_result_rows_verified_against_protocols": true,
+  "independent_csv_sqlite_value_comparison": true,
+  "csv_rows_independently_parsed": {
+    "address_enrichment": 5427,
+    "candidate_results": 631704,
+    "collection_issues": 4831,
+    "districts": 218,
+    "line_labels": 1567,
+    "missing_protocols": 4831,
+    "parties": 10,
+    "party_results": 892290,
+    "precincts": 91381,
+    "protocol_lines": 3661494,
+    "protocols": 178125,
+    "source_ledger": 2,
+    "validation_issues": 0,
+    "map_geodata": 85999
+  },
+  "coordinate_source_present_for_all_points": true,
+  "documented_analytic_sql_exercised": true,
+  "geography_enrichment_checks": {
+    "snapshot_date": "2026-09-30",
+    "source_delivery_sha256": "0cfc9ae8bf7a23ac67384ac8cb0766529644d70ee2ad93592b31036d3e935edc",
+    "historical_map_coordinate_additions": 83372,
+    "total_precincts_with_coordinates": 85999,
+    "precincts_without_coordinates": 5382,
+    "precincts_with_address": 86001,
+    "precincts_with_locality": 85995,
+    "coordinate_sources": {
+      "supplied_yandex_geocoding": 2627,
+      "historical_map": 83372
+    },
+    "new_geocoding_performed": false,
+    "matching_key": "region + UIK number, unique on both sides",
+    "vote_tables_unchanged": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_errors": 0,
+    "all_original_table_counts_preserved": true,
+    "precinct_csv_sqlite_values_match": true,
+    "map_geodata_rows": 85999
+  }
+}

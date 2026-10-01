@@ -1,0 +1,38 @@
+name: Publish verified research snapshot
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-snapshot.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-research-2026-09-30
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify supplied source, package and verify both formats
+        run: |
+          mkdir -p data dist
+          curl --fail --location --retry 3 --output data/source.zip https://uiks.top/downloads/duma-2026-research-2026-09-30.zip
+          python3 scripts/package_release.py --source data/source.zip --output dist
+      - name: Publish release without overwriting an existing snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release create research-2026-09-30 \
+            dist/duma-2026-csv-2026-09-30.zip \
+            dist/duma-2026-sqlite-2026-09-30.zip \
+            dist/SHA256SUMS dist/distribution.json \
+            --target "$GITHUB_SHA" \
+            --title "Снимок 30.09.2026 / Research snapshot 2026-09-30" \
+            --notes-file docs/RELEASE_NOTES.md

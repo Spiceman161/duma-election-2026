@@ -1,0 +1,888 @@
+{
+  "tables": {
+    "precincts": [
+      {
+        "name": "election_year",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "tik_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "tik_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "uik_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "locality",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "latitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "longitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "district_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_status",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address_status",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address_source_url",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address_retrieved_at_utc",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "commission_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "commission_external_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_precision",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_confidence",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_kind",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_method",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoded_address",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address_origin",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "coordinate_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "locality_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geography_match_method",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "coordinate_approximate",
+        "type": "INTEGER",
+        "nullable": true
+      }
+    ],
+    "address_enrichment": [
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "uik_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "commission_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "external_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "retrieved_at_utc",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "latitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "longitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_status",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_precision",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoded_address",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_method",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_confidence",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_kind",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "protocols": [
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "dataset",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "election_year",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "district_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "ballot_type",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "report_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "official_protocol_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "commission_classifier_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "parent_commission_classifier_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_election_uuid",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_created_at",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "protocol_updated_at",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "protocol_status",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "signed",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "root_signed",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "repeated",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "registered_voters",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "ballots_received",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "early_votes",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "ballots_issued_stationary",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "ballots_issued_outside",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "cancelled_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "portable_box_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "stationary_box_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "invalid_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "valid_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "lost_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "unaccounted_ballots",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "line_labels": [
+      {
+        "name": "label_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "protocol_lines": [
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "record_ordinal",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "description_category",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "info_num",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "line_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "label_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "percent_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "group_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "is_elected",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "party_results": [
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "election_year",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "district_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "party_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "party_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "ballot_position",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "votes",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "protocol_status",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "candidate_results": [
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "election_year",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "district_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "candidate_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "candidate_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "party_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "party_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "nomination_type",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "ballot_position",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "votes",
+        "type": "INTEGER",
+        "nullable": true
+      },
+      {
+        "name": "protocol_status",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "missing_protocols": [
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "ballot_type",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "reason",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "validation_issues": [
+      {
+        "name": "severity",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "protocol_key",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "issue",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "details",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "parties": [
+      {
+        "name": "party_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "official_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "short_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "ballot_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "color",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "districts": [
+      {
+        "name": "district_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "district_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "source_ledger": [
+      {
+        "name": "source_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "retrieved_at",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "file_format",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "collection_issues": [
+      {
+        "name": "severity",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "file",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "row_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "field",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "issue",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "source_url",
+        "type": "TEXT",
+        "nullable": true
+      }
+    ],
+    "map_geodata": [
+      {
+        "name": "region_code",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "uik_number",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "uik_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "locality",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "latitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "longitude",
+        "type": "REAL",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_precision",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_confidence",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geocoding_kind",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "address_origin",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "coordinate_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "locality_source",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "geography_match_method",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "coordinate_approximate",
+        "type": "INTEGER",
+        "nullable": true
+      }
+    ]
+  },
+  "primary_keys": {
+    "precincts": [
+      "uik_id"
+    ],
+    "protocols": [
+      "protocol_key"
+    ],
+    "protocol_lines": [
+      "protocol_key",
+      "record_ordinal"
+    ],
+    "party_results": [
+      "protocol_key",
+      "ballot_position"
+    ],
+    "candidate_results": [
+      "protocol_key",
+      "ballot_position"
+    ],
+    "map_geodata": [
+      "uik_id"
+    ]
+  },
+  "null_policy": "CSV empty cell = NULL; SQLite uses NULL. Explicit 0 is retained.",
+  "encoding": "UTF-8, comma delimiter, RFC4180 quoting",
+  "coordinate_crs": "EPSG:4326 WGS84"
+}

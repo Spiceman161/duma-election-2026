@@ -24,25 +24,24 @@ This repository contains **2026 data**, documentation and extraction tools. The 
 
 The snapshot preserves **all parties, all candidates, both ballot types and DEG**. The map's focus on United Russia does not restrict this research dataset.
 
-## Getting started
+## Download data
 
-Requirements: Git and Python 3 with its standard `lzma` module. No additional Python packages or Git LFS are required.
+**[Snapshot 2026-09-30 — GitHub Release](https://github.com/Spiceman161/duma-election-2026/releases/tag/research-2026-09-30)**
 
-```bash
-git clone https://github.com/Spiceman161/duma-election-2026.git
-cd duma-election-2026
-python3 scripts/prepare_data.py
-```
+| Format | Download | Use |
+| --- | --- | --- |
+| CSV | [duma-2026-csv-2026-09-30.zip](https://github.com/Spiceman161/duma-election-2026/releases/download/research-2026-09-30/duma-2026-csv-2026-09-30.zip) | All 14 CSV tables for data analysis |
+| SQLite | [duma-2026-sqlite-2026-09-30.zip](https://github.com/Spiceman161/duma-election-2026/releases/download/research-2026-09-30/duma-2026-sqlite-2026-09-30.zip) | Complete `elections.sqlite` database and SQL example |
 
-The script reconstructs the original ZIP, verifies the SHA-256 of every part and the entire archive, extracts all **20 files** into `data/`, and verifies the contents against `SHA256SUMS`. Allow approximately **2.5 GB of free disk space**. On Windows, use `python` instead of `python3`.
+These are two representations of **the same complete snapshot**. Choose your preferred format; downloading both is optional. Each representation includes all parties, candidates, both ballot types and DEG.
 
-To reconstruct and verify the ZIP without extracting:
+Download and extract with a normal ZIP application. Both use **Deflate**; Python, Git, Git LFS and assembly from parts are not required. If downloading both, extract into separate directories. Each package includes documentation and file checksums. The SQLite package also includes a source inventory CSV for attribution.
 
-```bash
-python3 scripts/prepare_data.py --archive-only
-```
+Large CSV files may exceed spreadsheet limits. Open `elections.sqlite` in a SQLite application; a query example is included. The example below assumes `data/elections.sqlite` — extract the SQLite package into `data/` to use that path.
 
-The ZIP uses LZMA compression and can also be opened with 7-Zip. Some operating systems' built-in ZIP extractors do not support this compression method.
+**[SHA256SUMS for both ZIPs](https://github.com/Spiceman161/duma-election-2026/releases/download/research-2026-09-30/SHA256SUMS)** · **[Package sizes and inventory](https://github.com/Spiceman161/duma-election-2026/releases/download/research-2026-09-30/distribution.json)**
+
+The automatic **Source code (zip/tar.gz)** release downloads and **Code → Download ZIP** contain repository documentation and scripts. For data, download the named CSV or SQLite packages above.
 
 ## Files and joins
 
@@ -114,13 +113,9 @@ GROUP BY p.region_name;
 
 ## Reproducibility
 
-`snapshot/` contains nine parts of **one unchanged final ZIP**, plus `archive.json` specifying their order, sizes and SHA-256 checksums. This stores the complete SQLite database and large CSV files in Git without individual files over 100 MiB. Splitting changes only storage, not dataset contents.
+Git tracks documentation, schema and examples. Data are distributed as two Deflate ZIP assets in a dated Release. [package_release.py](scripts/package_release.py) is a maintainer tool: it verifies the original delivery, packages each representation and verifies SHA-256 for original and output files. It is not needed to use the downloads.
 
-SHA-256 of the reconstructed ZIP:
-
-```text
-e04ec13769fb97de7e40d967c6e027903075a1e7a8bf6c209f512f0f082d7e99
-```
+Original table and SQLite bytes are preserved. Repackaging changes ZIP hashes; current package checksums are attached to the Release. [SOURCE_SHA256SUMS](docs/SOURCE_SHA256SUMS) covers original delivery files; `SHA256SUMS` inside each new ZIP covers that package's files. [Original documentation](docs/SOURCE_README.ru.md) and `manifest.json` are preserved as delivery metadata; their ZIP LZMA notes refer to the previous packaging.
 
 SQLite integrity, foreign keys, table counts, vote sums and CSV/SQLite geographic values were checked. See [validation_summary.json](docs/validation_summary.json). Adding geography did not change the original voting tables.
 
