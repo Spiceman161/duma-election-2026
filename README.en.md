@@ -124,3 +124,11 @@ SQLite integrity, foreign keys, table counts, vote sums and CSV/SQLite geographi
 Election record provenance is documented in `source_ledger.csv` and [manifest.json](docs/manifest.json). Historical map sources include [RED](https://doi.org/10.1038/s41597-026-07590-9) and [Harvard Dataverse](https://doi.org/10.7910/DVN/DFGNTP), CC BY 4.0. Those terms apply to the respective source materials; this repository does not assign a new blanket licence to all third-party data.
 
 When citing, include this repository, the snapshot date **2026-09-30**, and the sources used. When extending the collection, preserve `uik_id`, `protocol_key`, provenance and modification dates; keep corrections separate from the original snapshot. Issues and Pull Requests documenting additions or corrections should include a supporting source.
+
+## Licences
+
+Original documentation and Spiceman161's own contributions to preparation and organization of the dataset are available under **[CC BY 4.0](LICENSES/CC-BY-4.0.txt)**, solely to the extent of rights held by Spiceman161. Redistribution and adaptation, including commercial use, are permitted with attribution, a licence link and an indication of changes.
+
+Helper scripts, SQL examples and workflow code use **[MIT](LICENSES/MIT.txt)**. Third-party data, original delivery documentation and metadata retain their own terms and attribution, including RED and Harvard Dataverse. No new blanket licence is assigned to third-party material.
+
+Scope and recommended attribution: **[LICENSE.md](LICENSE.md)**.
